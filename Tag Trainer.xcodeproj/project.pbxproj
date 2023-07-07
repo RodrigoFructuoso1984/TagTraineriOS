@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B60486FF94773CA937B684F /* Pods_Tag_Trainer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB5436048369E7B2A85CE1A5 /* Pods_Tag_Trainer.framework */; };
+		CECC16752A587DDF008A3F62 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CECC16742A587DDF008A3F62 /* GoogleService-Info.plist */; };
+		CECC16782A587E94008A3F62 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CECC16772A587E94008A3F62 /* FirebaseAnalytics */; };
+		CECC167A2A587E94008A3F62 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CECC16792A587E94008A3F62 /* FirebaseAnalyticsSwift */; };
+		CECC167F2A58878A008A3F62 /* GTM-PBQ29TV.json in Resources */ = {isa = PBXBuildFile; fileRef = CECC167E2A58878A008A3F62 /* GTM-PBQ29TV.json */; };
 		E54DE19E25E408AA00830688 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54DE19D25E408AA00830688 /* CheckoutViewController.swift */; };
 		E5552F2325DEE433004E5252 /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5552F2225DEE433004E5252 /* ProductsTableViewController.swift */; };
 		E5552F2825DEE494004E5252 /* ProductsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5552F2725DEE494004E5252 /* ProductsGenerator.swift */; };
@@ -27,6 +32,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4112BC5D40E405BCC537A583 /* Pods-Tag Trainer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tag Trainer.release.xcconfig"; path = "Target Support Files/Pods-Tag Trainer/Pods-Tag Trainer.release.xcconfig"; sourceTree = "<group>"; };
+		C685CCB59613DF4735CA7828 /* Pods-Tag Trainer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tag Trainer.debug.xcconfig"; path = "Target Support Files/Pods-Tag Trainer/Pods-Tag Trainer.debug.xcconfig"; sourceTree = "<group>"; };
+		CECC16742A587DDF008A3F62 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CECC167E2A58878A008A3F62 /* GTM-PBQ29TV.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "GTM-PBQ29TV.json"; sourceTree = "<group>"; };
+		DB5436048369E7B2A85CE1A5 /* Pods_Tag_Trainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tag_Trainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E54DE19D25E408AA00830688 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		E5552F2225DEE433004E5252 /* ProductsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableViewController.swift; sourceTree = "<group>"; };
 		E5552F2725DEE494004E5252 /* ProductsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsGenerator.swift; sourceTree = "<group>"; };
@@ -53,12 +63,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CECC167A2A587E94008A3F62 /* FirebaseAnalyticsSwift in Frameworks */,
+				CECC16782A587E94008A3F62 /* FirebaseAnalytics in Frameworks */,
+				0B60486FF94773CA937B684F /* Pods_Tag_Trainer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C043A4410323861729432B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C685CCB59613DF4735CA7828 /* Pods-Tag Trainer.debug.xcconfig */,
+				4112BC5D40E405BCC537A583 /* Pods-Tag Trainer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4DDBC37FFECA47486D279DCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB5436048369E7B2A85CE1A5 /* Pods_Tag_Trainer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CECC167B2A588679008A3F62 /* container */ = {
+			isa = PBXGroup;
+			children = (
+				CECC167E2A58878A008A3F62 /* GTM-PBQ29TV.json */,
+			);
+			path = container;
+			sourceTree = "<group>";
+		};
 		E5208E972656A77000EA1F8C /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +135,11 @@
 		E5C5D3E425CD95EF00469A7D = {
 			isa = PBXGroup;
 			children = (
+				CECC167B2A588679008A3F62 /* container */,
 				E5C5D3EF25CD95EF00469A7D /* Tag Trainer */,
 				E5C5D3EE25CD95EF00469A7D /* Products */,
+				4C043A4410323861729432B7 /* Pods */,
+				4DDBC37FFECA47486D279DCC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +157,7 @@
 				E5C5D3F225CD95EF00469A7D /* SceneDelegate.swift */,
 				E5C5D3F025CD95EF00469A7D /* AppDelegate.swift */,
 				E5C5D3F925CD95F400469A7D /* Assets.xcassets */,
+				CECC16742A587DDF008A3F62 /* GoogleService-Info.plist */,
 				E5208E972656A77000EA1F8C /* View */,
 				E5C256BA25D1D3A600213B8C /* Model */,
 				E5C256B725D1B3EC00213B8C /* Controller */,
@@ -131,15 +173,22 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5C5D40125CD95F400469A7D /* Build configuration list for PBXNativeTarget "Tag Trainer" */;
 			buildPhases = (
+				E798889F83A62C75CCD62A11 /* [CP] Check Pods Manifest.lock */,
 				E5C5D3E925CD95EF00469A7D /* Sources */,
 				E5C5D3EA25CD95EF00469A7D /* Frameworks */,
 				E5C5D3EB25CD95EF00469A7D /* Resources */,
+				CD270B97CBCA91CA036107D2 /* [CP] Embed Pods Frameworks */,
+				8A8CB5C58B9F6F24B02BD1FF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Tag Trainer";
+			packageProductDependencies = (
+				CECC16772A587E94008A3F62 /* FirebaseAnalytics */,
+				CECC16792A587E94008A3F62 /* FirebaseAnalyticsSwift */,
+			);
 			productName = "Tag Trainer";
 			productReference = E5C5D3ED25CD95EF00469A7D /* Tag Trainer.app */;
 			productType = "com.apple.product-type.application";
@@ -167,6 +216,9 @@
 				Base,
 			);
 			mainGroup = E5C5D3E425CD95EF00469A7D;
+			packageReferences = (
+				CECC16762A587E94008A3F62 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = E5C5D3EE25CD95EF00469A7D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -182,12 +234,73 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5C5D3FD25CD95F400469A7D /* LaunchScreen.storyboard in Resources */,
+				CECC167F2A58878A008A3F62 /* GTM-PBQ29TV.json in Resources */,
+				CECC16752A587DDF008A3F62 /* GoogleService-Info.plist in Resources */,
 				E5C5D3FA25CD95F400469A7D /* Assets.xcassets in Resources */,
 				E5C5D3F825CD95EF00469A7D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A8CB5C58B9F6F24B02BD1FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tag Trainer/Pods-Tag Trainer-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tag Trainer/Pods-Tag Trainer-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tag Trainer/Pods-Tag Trainer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD270B97CBCA91CA036107D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tag Trainer/Pods-Tag Trainer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tag Trainer/Pods-Tag Trainer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tag Trainer/Pods-Tag Trainer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E798889F83A62C75CCD62A11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tag Trainer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E5C5D3E925CD95EF00469A7D /* Sources */ = {
@@ -351,6 +464,7 @@
 		};
 		E5C5D40225CD95F400469A7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C685CCB59613DF4735CA7828 /* Pods-Tag Trainer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -370,6 +484,7 @@
 		};
 		E5C5D40325CD95F400469A7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4112BC5D40E405BCC537A583 /* Pods-Tag Trainer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -409,6 +524,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CECC16762A587E94008A3F62 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CECC16772A587E94008A3F62 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CECC16762A587E94008A3F62 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		CECC16792A587E94008A3F62 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CECC16762A587E94008A3F62 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E5C5D3E525CD95EF00469A7D /* Project object */;
 }
